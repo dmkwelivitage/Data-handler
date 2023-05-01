@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DynamicPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Label text="Name" />
+            <Label text="Age" />
+            <Label text="Mobile Number" />
+            <Label text="City" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="120.0" layoutY="100.0" prefHeight="200.0" prefWidth="338.0" spacing="13.0">
+         <children>
+            <TextField fx:id="InputNameField" />
+            <TextField fx:id="InputAgeField" />
+            <TextField fx:id="InputNOField" />
+            <TextField fx:id="InputCityField" />
+         </children>
+      </VBox>
+      <Label layoutX="210.0" layoutY="65.0" text="Data Input">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="360.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnViewClicked" text="View" />
+    <Button layoutX="241.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnResetClicked" text="Reset" />
+      <Button layoutX="120.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnSubmitClicked" text="Submit" />
+   </children>
+</AnchorPane>
